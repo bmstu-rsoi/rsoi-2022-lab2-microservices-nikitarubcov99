@@ -14,7 +14,37 @@ services:
     ports:
       - "5432:5432"
 
-# TODO добавить сервисы
+reservation:
+  build:
+    context: Reservation
+  depends_on:
+    - postgres
+  ports:
+    - "8070:8070"
+  payment:
+    build:
+      context: Payment
+    depends_on:
+      - postgres
+    ports:
+      - "8060:8060"
+  loyalty:
+    build:
+      context: Loyalty
+    depends_on:
+      - postgres
+    ports:
+      - "8050:8050"
+  gateway:
+    build:
+      context: Gateway
+    ports:
+      - "8080:8080"
+    depends_on:
+      - reservation
+      - payment
+      - loyalty
+
 
 volumes:
   db-data:
