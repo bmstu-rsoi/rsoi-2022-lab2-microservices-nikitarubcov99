@@ -14,13 +14,13 @@ services:
     ports:
       - "5432:5432"
 
-reservation:
-  build:
-    context: Reservation
-  depends_on:
-    - postgres
-  ports:
-    - "8070:8070"
+  reservation:
+    build:
+      context: Reservation
+    depends_on:
+      - postgres
+    ports:
+      - "8070:8070"
   payment:
     build:
       context: Payment
