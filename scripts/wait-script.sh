@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-IFS="," read -ra PORTS <<<"$WAIT_PORTS"
+IFS="," read -ra PORTS <<<"8080,8070,8060,8050,5432"
 path=$(dirname "$0")
 
 PIDs=()

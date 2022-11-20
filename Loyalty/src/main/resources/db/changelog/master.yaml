@@ -1,0 +1,7 @@
+ databaseChangeLog:
+    - include:
+        file: create-table-loyalty.sql
+        relativeToChangelogFile: true
+    - include:
+        file: insert-table-loyalty.sql
+        relativeToChangelogFile: true
