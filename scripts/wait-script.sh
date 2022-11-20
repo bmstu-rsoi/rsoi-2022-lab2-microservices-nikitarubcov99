@@ -2,7 +2,7 @@
 
 IFS="," read -ra PORTS <<<"$WAIT_PORTS"
 
-echo "Sleeping for 30 seconds"
+echo "Sleeping for 90 seconds"
 sleep 90
 echo "Wake up"
 
