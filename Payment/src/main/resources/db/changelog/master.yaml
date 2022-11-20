@@ -1,0 +1,4 @@
+ databaseChangeLog:
+    - include:
+        file: create-table-payment.sql
+        relativeToChangelogFile: true

@@ -1,4 +1,4 @@
-package ru.rubcov.loyalty;
+package ru.rubcov.payment.loyalty;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
